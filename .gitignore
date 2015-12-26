@@ -1,0 +1,6 @@
+#Ignoring files that comes with Wordpress
+
+index.php
+twentyfifteen
+twentyfourteen
+twentysixteen
