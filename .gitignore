@@ -1,6 +1,7 @@
 #Ignoring files that comes with Wordpress
 
 index.php
+twenty*
 twentyfifteen
-twentyfourteen
 twentysixteen
+twentyseventeen
