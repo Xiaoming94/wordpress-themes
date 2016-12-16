@@ -7,12 +7,13 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-  <div class="container">
-    <header class="site-header">
-      <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
-      <h5><?php bloginfo('description'); ?></h5>
-    </header>
-
+  <div class="page-header">
+    <div class="container">
+      <header class="site-header">
+        <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+        <h5><?php bloginfo('description'); ?></h5>
+      </header>
+    </div>
   </div>
   <div class="container">
     <nav>
