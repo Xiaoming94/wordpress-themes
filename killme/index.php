@@ -10,9 +10,10 @@
         $content = get_the_content();
         if (str_word_count( strip_tags( $content ))>150){
           $trimmed = wp_trim_words($content, 150, '...');
-          echo $trimmed;
+          echo $trimmed . "\n";
       ?>
-      <a href='<?php the_permalink(); ?>'class="btn">Continue Reading</a>
+      <br />
+      <a href='<?php the_permalink(); ?>'class="btn btn-default">Continue Reading</a>
         <?php
         } else {
           the_content();
