@@ -4,7 +4,7 @@
   <?php
   if (have_posts()) :
     while (have_posts()) : the_post();?>
-    <h2><a href='<?php $permalink ?>'><?php the_title();?></a></h2>
+    <h2><a href='<?php the_permalink(); ?>'><?php the_title();?></a></h2>
     <p>
       <?php
         $content = get_the_content();
@@ -12,7 +12,7 @@
           $trimmed = wp_trim_words($content, 150, '...');
           echo $trimmed;
       ?>
-
+      <a href='<?php the_permalink(); ?>'class="btn">Continue Reading</a>
         <?php
         } else {
           the_content();
