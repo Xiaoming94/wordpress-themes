@@ -3,13 +3,13 @@
 function load_killMe_resources(){
 
   $depsJS = array( 'jquery' );
-  wp_enqueue_style('style', get_stylesheet_uri());
-  wp_enqueue_script('main',
-                    get_template_directory_uri() . '/js/main.js',
-                    $depsJS,1.1,true);
   wp_enqueue_script('bootstrap',
-                    get_template_directory_uri() . '/bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
-                    $depsJS,1.1,true);
+  get_template_directory_uri() . '/bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
+  $depsJS);
+  wp_enqueue_script('main',
+  get_template_directory_uri() . '/js/main.js',
+  $depsJS);
+  wp_enqueue_style('style', get_stylesheet_uri());
 
 }
 
