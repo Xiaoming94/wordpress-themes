@@ -21,8 +21,9 @@
         }
       ?>
     </p>
-    <?php the_category();
-    comments_number("0","1","%"); ?>
+    <?php the_category(); ?>
+    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+    <?php comments_number("0","1","%"); ?>
   <?php endwhile;
   else :
     echo '<p>no content found :(</p>';
