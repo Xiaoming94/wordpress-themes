@@ -8866,10 +8866,10 @@ button.close {
  */
 /* line 6, sass/_index.scss */
 .thumbnail {
-  margin-top: 0px;
+  margin-top: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
-  margin-left: 12px;
+  margin-left: 10px;
   border: 0 solid;
 }
 
