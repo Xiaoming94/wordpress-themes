@@ -5,27 +5,29 @@
     <?php
     if (have_posts()) :
       while (have_posts()) : the_post();?>
-      <h2><a href='<?php the_permalink(); ?>'><?php the_title();?></a></h2>
+      <div class="container-fluid">
+        <h2><a href='<?php the_permalink(); ?>'><?php the_title();?></a></h2>
+      </div>
         <p>
           <?php
           $attr = array( 'class' => 'alignleft thumbnail', 'align' => 'left');
           the_post_thumbnail('thumbnail',$attr); ?>
-
+          <div class="container-fluid">
+            <?php
+            $content = get_the_content();
+            if (str_word_count( strip_tags( $content ))>100):
+              $trimmed = wp_trim_words($content, 100, '...');
+              echo $trimmed . "\n"; ?>
+              <div class="continue-button-div">
+                <a href='<?php the_permalink(); ?>'class="btn btn-default continue-btn">Continue Reading</a>
+              </div>
+          </div>
           <?php
-          $content = get_the_content();
-          if (str_word_count( strip_tags( $content ))>140):
-            $trimmed = wp_trim_words($content, 140, '...');
-            echo $trimmed . "\n"; ?>
-            <div class="continue-button-div">
-              <a href='<?php the_permalink(); ?>'class="btn btn-default continue-btn">Continue Reading</a>
-            </div>
-          <?php
-          else :
-            the_content();
+              else :
           endif;
           ?>
         </p>
-        <div class="post-data">
+        <div class="post-data container-fluid">
           <nav>
             <ul>
               <li><?php the_category(); ?></li>

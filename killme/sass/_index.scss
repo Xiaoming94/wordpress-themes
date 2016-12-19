@@ -3,6 +3,16 @@
  * Containing code that styles some components only present in index page
  * Hehe
  */
-.continue-btn{
-  
+.thumbnail {
+    margin: {
+      top: 0px;
+      right: 10px;
+      bottom: 10px;
+      left: 12px;
+    }
+    border: 0 solid;
+}
+
+.continue-button-div{
+  margin-top: 13px;
 }

@@ -8864,3 +8864,16 @@ button.close {
  * Containing code that styles some components only present in index page
  * Hehe
  */
+/* line 6, sass/_index.scss */
+.thumbnail {
+  margin-top: 0px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 12px;
+  border: 0 solid;
+}
+
+/* line 16, sass/_index.scss */
+.continue-button-div {
+  margin-top: 13px;
+}
