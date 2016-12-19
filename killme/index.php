@@ -9,15 +9,16 @@
         <p>
           <?php
           $attr = array( 'class' => 'alignleft thumbnail', 'align' => 'left');
-          the_post_thumbnail(array(200,200),$attr); ?>
+          the_post_thumbnail('thumbnail',$attr); ?>
 
           <?php
           $content = get_the_content();
           if (str_word_count( strip_tags( $content ))>140):
             $trimmed = wp_trim_words($content, 140, '...');
             echo $trimmed . "\n"; ?>
-            <br />
-            <a href='<?php the_permalink(); ?>'class="btn btn-default">Continue Reading</a>
+            <div class="continue-button-div">
+              <a href='<?php the_permalink(); ?>'class="btn btn-default continue-btn">Continue Reading</a>
+            </div>
           <?php
           else :
             the_content();
@@ -26,14 +27,13 @@
         </p>
         <div class="post-data">
           <nav>
-            <ul class="nav nav-pills">
+            <ul>
               <li><?php the_category(); ?></li>
               <li>
                 <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
                 <?php comments_number("0","1","%"); ?>
               </li>
             </ul>
-          </nav>
         </div>
       <?php endwhile;
       else :
