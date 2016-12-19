@@ -21,11 +21,12 @@
               <div class="continue-button-div">
                 <a href='<?php the_permalink(); ?>'class="btn btn-default continue-btn">Continue Reading</a>
               </div>
-          </div>
-          <?php
+              <?php
               else :
-          endif;
-          ?>
+                the_content();
+              endif;
+              ?>
+          </div>
         </p>
         <div class="post-data container-fluid">
           <nav>
