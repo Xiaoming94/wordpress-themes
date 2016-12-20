@@ -8877,3 +8877,13 @@ button.close {
 .continue-button-div {
   margin-top: 13px;
 }
+
+/* line 22, sass/_index.scss */
+.post-panel ul.post-panel-links li {
+  width: auto;
+  float: left;
+  margin-top: 0;
+  margin-right: 5px;
+  margin-bottom: 0;
+  margin-left: 0;
+}
