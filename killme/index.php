@@ -44,6 +44,7 @@
       endif;
 
       ?>
+      <?php get_sidebar(); ?>
   </div>
 </div>
 
