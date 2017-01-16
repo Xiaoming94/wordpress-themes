@@ -26,3 +26,6 @@
       <?php wp_nav_menu( $args );?>
     </nav>
   </div>
+  <div class="container">
+    <div class="row">
+      <?php get_sidebar(); ?>

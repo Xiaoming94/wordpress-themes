@@ -1,3 +1,5 @@
+  </div>
+</div>
 <div class="container">
   <footer class="site-footer">
     <?php
