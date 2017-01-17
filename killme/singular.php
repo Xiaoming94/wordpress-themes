@@ -1,19 +1,21 @@
 <?php   get_header(); ?>
 <?php if (have_posts()) :
   while (have_posts()) : the_post();?>
-<div class="container">
-  <h2><?php the_title(); ?></h2>
-    <p>
+  <div class="col-md-9">
+    <div class="container-fluid">
+      <h2><?php the_title(); ?></h2>
+      <p>
         <?php the_content();?>
-    </p>
-    <p>
-      <ol class="commentlist">
-        <?php
-        comments_template();
-        ?>
-      </ol>
-    </p>
-</div>
+      </p>
+      <p>
+        <div id="comment-div">
+          <?php
+          comments_template();
+          ?>
+        </div>
+      </p>
+    </div>
+  </div>
 <?php
   endwhile;
 else : echo "<p>No content found</p>";
