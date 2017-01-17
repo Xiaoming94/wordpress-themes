@@ -28,6 +28,6 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
-        <?php get_sidebar(); ?>
+      <div class="col-md-3 sidebar">
+          <?php get_sidebar(); ?>
       </div>
