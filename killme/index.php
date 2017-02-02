@@ -1,5 +1,5 @@
 <?php   get_header(); ?>
-  <div class="col-md-9">
+  <div class="col-md-9 col-sm-8">
     <?php
     if (have_posts()) :
       while (have_posts()) : the_post();?>
@@ -41,7 +41,7 @@
           echo '<p>no content found :(</p>';
         endif;
 
-        ?>      
+        ?>
   </div>
 
 
