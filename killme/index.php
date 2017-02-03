@@ -13,8 +13,8 @@
         <div class="container-fluid">
           <?php
           $content = get_the_content();
-          if (str_word_count( strip_tags( $content ))>100):
-            $trimmed = wp_trim_words($content, 100, '...');
+          if (str_word_count( strip_tags( $content ))>76):
+            $trimmed = wp_trim_words($content, 76, '...');
             echo $trimmed . "\n"; ?>
             <div class="continue-button-div">
               <a href='<?php the_permalink(); ?>'
