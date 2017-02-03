@@ -1,3 +1,8 @@
+    <div class="col-md-3 col-sm-4 col-xs-12 sidebar">
+      <div class="container-fluid">
+        <?php get_sidebar(); ?>
+      </div>
+    </div>
   </div>
 </div>
 <div class="container">

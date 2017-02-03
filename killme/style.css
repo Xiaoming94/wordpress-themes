@@ -8891,4 +8891,5 @@ button.close {
 /* line 1, sass/_sidebar.scss */
 .sidebar {
   margin-top: 15px;
+  float: right;
 }
