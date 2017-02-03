@@ -8888,8 +8888,12 @@ button.close {
   margin-left: 0;
 }
 
+/* line 34, sass/_index.scss */
+.content {
+  float: right;
+}
+
 /* line 1, sass/_sidebar.scss */
 .sidebar {
   margin-top: 15px;
-  float: right;
 }
