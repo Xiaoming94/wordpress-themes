@@ -1,8 +1,8 @@
 <div id="sidebar-primary" class="sidebar">
-  <?php if (is_active_sidebar( 'primary' ) ): ?>
-    <?php dynamic_sidebar( 'primary' );?>
+  <?php if (is_active_sidebar( 'sidebar-1' ) ): ?>
+    <?php dynamic_sidebar( 'sidebar-1' );?>
   <?php else:?>
-    Hello World
+    <!-- Think about default widgets later-->
   <?php endif; ?>
 
 </div>

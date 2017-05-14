@@ -24,7 +24,8 @@ function killMe_widgets_init(){
   ) );
 }
 
-add_action('wp_enqueue_scripts','load_killMe_resources','killMe_widgets_init');
+add_action('wp_enqueue_scripts','load_killMe_resources');
+add_action('widgets_init','killMe_widgets_init');
 
 register_nav_menus(array(
   'primary' => __( 'Primary Menu' ),
