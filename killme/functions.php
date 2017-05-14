@@ -13,7 +13,18 @@ function load_killMe_resources(){
 
 }
 
-add_action('wp_enqueue_scripts','load_killMe_resources');
+function killMe_widgets_init(){
+  register_sidebar( array(
+    'name'            => __( 'Primary Sidebar', 'theme_name'),
+    'id'              => 'sidebar-1',
+    'before_widget'   => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget'    => '</aside>',
+    'before_title'    => '<h1 class="widget-title">',
+    'after_title'     => '</h1>'
+  ) );
+}
+
+add_action('wp_enqueue_scripts','load_killMe_resources','killMe_widgets_init');
 
 register_nav_menus(array(
   'primary' => __( 'Primary Menu' ),
