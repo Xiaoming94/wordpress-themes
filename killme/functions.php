@@ -25,7 +25,8 @@ function killMe_widgets_init(){
 }
 
 function add_search_to_nav($items,$args){
-  $items .= get_search_form(false);
+  if( $args->theme_location == 'primary' )
+      $items .= '<li>' . get_search_form( false ) . '</li>';
   return $items;
 }
 
