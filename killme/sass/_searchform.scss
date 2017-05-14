@@ -1,13 +1,17 @@
-.search-form {
-  .search-button {
-    background: {
-      color: #ffffff;
-    }
-    color: #78909c;
-    font-size: 14.5px;
-    &:hover {
-      background: #efefef;
+#search {
+  width: 20%;
+  float: right;
+  .search-form {
+    .search-button {
+      background: {
+        color: #ffffff;
+      }
       color: #78909c;
+      font-size: 14.5px;
+      &:hover {
+        background: #efefef;
+        color: #78909c;
+      }
     }
   }
 
