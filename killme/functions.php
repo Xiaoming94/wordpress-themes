@@ -30,6 +30,13 @@ function add_search_to_nav($items,$args){
   return $items;
 }
 
+function custom_header_defaults(){
+  $args = array(
+    'default-image' => get_template_directory_uri() . '/images/default-Header.jpg',
+  );
+  add_theme_support('custom-header', $args );
+}
+
 add_action('wp_enqueue_scripts','load_killMe_resources');
 add_action('widgets_init','killMe_widgets_init');
 add_filter('wp_nav_menu_items','add_search_to_nav',10,2);
@@ -39,5 +46,7 @@ register_nav_menus(array(
   'footer' => __( 'Footer Menu' ),
 ));
 
+
 add_theme_support( 'post-thumbnails' );
+add_action('after_setup_theme','custom_header_defaults');
 ?>
