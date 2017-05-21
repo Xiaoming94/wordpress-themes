@@ -9,6 +9,7 @@ Version: beta
 @import "compass/reset";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-compass";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "mixins";
 @import "index";
 @import "searchform";
 @import "sidebar";

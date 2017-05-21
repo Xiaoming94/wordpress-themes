@@ -3,6 +3,12 @@
  * Containing code that styles some components only present in index page
  * Hehe
  */
+.page-box-shadow {
+  float: left;
+  background: rgba(255,255,255,0.6);
+  @include border-radius(5px);
+}
+
 .theme-wrapper {
   background-image: url(images/background-tile.png);
   background-repeat: repeat;
