@@ -1,4 +1,5 @@
 <?php   get_header(); ?>
+<div class="page-box-shadow">
   <div class="col-md-9 col-sm-8 col-xs-12 content">
     <?php
     if (have_posts()) :
