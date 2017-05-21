@@ -3,6 +3,11 @@
  * Containing code that styles some components only present in index page
  * Hehe
  */
+.theme-wrapper {
+  background-image: url(images/background-tile.png);
+  background-repeat: repeat;
+}
+
 .thumbnail {
     margin: {
       top: 10px;
