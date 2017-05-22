@@ -5,8 +5,8 @@
  */
 .page-box-shadow {
   float: left;
-  background: rgba(255,255,255,0.6);
-  @include border-radius(5px);
+  background: rgba(255,255,255,0.8);
+  @include border-radius(2px);
   @include box-shadow(rgba(0,0,0,0.75) 0px 5px 10px 5px)
 }
 
