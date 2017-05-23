@@ -46,3 +46,14 @@
 .content {
   float: left;
 }
+
+.footer-container {
+  background: #000000;
+  padding: {
+    top: 20px;
+    left: 10px;
+    bottom: 20px;
+    right: 10px;
+  }
+  position: relative;
+}
