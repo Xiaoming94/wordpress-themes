@@ -26,8 +26,29 @@ function killMe_widgets_init(){
 
 function add_search_to_nav($items,$args){
   if( $args->theme_location == 'primary' )
-      $items .= '<li>' . get_search_form( false ) . '</li>';
+      $items .= '<li>' . get_header_search_form() . '</li>';
   return $items;
+}
+
+function get_header_search_form() { //Same as get_search_form() but for another .php file
+    do_action('pre_get_search_form');
+    $format = current_theme_supports('html5','search-form') ? 'html5' : 'xhtml';
+    $format = apply_filters('search_form_format',$format);
+    $search_form = locate_template('header-searchform.php');
+    ob_start();
+    require($search_form);
+    $form = ob_get_clean();
+// For results, these are mostly copied from wordpress
+    $result = apply_filters( 'get_search_form', $form );
+
+    if ( null === $result )
+        $result = $form;
+
+    if ( $echo )
+        echo $result;
+    else
+        return $result;
+
 }
 
 function custom_header_defaults(){
