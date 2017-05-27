@@ -24,8 +24,9 @@ function killMe_widgets_init(){
   ) );
 }
 
-function add_search_to_nav($items,$args){
+function prepare_nav_bar($items,$args){
   if( $args->theme_location == 'primary' )
+      $items = '<li><a href='. home_url() .'>Home</a></li>' . $items;
       $items .= '<li>' . get_header_search_form() . '</li>';
   return $items;
 }
@@ -60,7 +61,7 @@ function custom_header_defaults(){
 
 add_action('wp_enqueue_scripts','load_killMe_resources');
 add_action('widgets_init','killMe_widgets_init');
-add_filter('wp_nav_menu_items','add_search_to_nav',10,2);
+add_filter('wp_nav_menu_items','prepare_nav_bar',10,2);
 
 register_nav_menus(array(
   'primary' => __( 'Primary Menu' ),
