@@ -57,3 +57,11 @@
   }
   position: relative;
 }
+
+.nav-background {
+    background: #000000;
+    position: fixed;
+    width:100%;
+    z-index: 999;
+    //@include box-shadow(rgba(0,0,0,0.60) 0px 3px 10px 5px);
+}

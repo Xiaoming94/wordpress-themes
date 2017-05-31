@@ -25,9 +25,10 @@ function killMe_widgets_init(){
 }
 
 function prepare_nav_bar($items,$args){
-  if( $args->theme_location == 'primary' )
+  if( $args->theme_location == 'primary' ){
       $items = '<li><a href='. home_url() .'>Home</a></li>' . $items;
       $items .= '<li>' . get_header_search_form() . '</li>';
+  }
   return $items;
 }
 
@@ -55,6 +56,7 @@ function get_header_search_form() { //Same as get_search_form() but for another 
 function custom_header_defaults(){
   $args = array(
     'default-image' => get_template_directory_uri() . '/images/default-Header.jpg',
+    'height'        => 200,
   );
   add_theme_support('custom-header', $args );
 }
@@ -71,4 +73,3 @@ register_nav_menus(array(
 
 add_theme_support( 'post-thumbnails' );
 add_action('after_setup_theme','custom_header_defaults');
-?>
