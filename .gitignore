@@ -1,6 +1,6 @@
 #Ignoring files that comes with Wordpress
 
-./index.php
+themes/index.php
 twenty*
 twentyfifteen
 twentysixteen
