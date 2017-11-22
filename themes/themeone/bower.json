@@ -1,0 +1,23 @@
+{
+  "name": "themeone",
+  "homepage": "blog.xiaoming.se",
+  "authors": [
+    "Henry Yang <henyan94@gmail.com>"
+  ],
+  "description": "Wordpress Theme",
+  "main": "",
+  "keywords": [
+    "theme",
+    "xiaoming",
+    "wordpress"
+  ],
+  "license": "GPL",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
