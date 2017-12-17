@@ -1,10 +1,14 @@
+<<<<<<< HEAD
 @charset "UTF-8";
+=======
+>>>>>>> Move theme development to branches
 /**
  * Theme Name: XiaoMing Theme One
  * Author: XiaoMing
  * Version: 0.1.0
  * License: None Yet
  */
+<<<<<<< HEAD
 /**
  * style.scss of themeone
  */
@@ -5027,3 +5031,5 @@ a.thumbnail {
       color: #fefefe; }
     .top-bar li:active {
       background: #233242; }
+=======
+>>>>>>> Move theme development to branches
