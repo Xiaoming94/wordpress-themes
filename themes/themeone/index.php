@@ -9,7 +9,8 @@
  */
   get_header();
 ?>
-Hello World
+
+Content placeholder
 
 <?php
   get_footer();
