@@ -4,6 +4,9 @@
  * Version: 0.1.0
  * License: None Yet
  */
+/**
+ * style.scss of themeone
+ */
 meta.foundation-version {
   font-family: "/5.5.3/"; }
 
@@ -6392,3 +6395,6 @@ th.hide-for-touch {
     display: table-cell !important; }
   th.show-for-print {
     display: table-cell !important; } }
+
+.background {
+  background-color: #555555; }
