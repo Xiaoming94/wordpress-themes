@@ -11,9 +11,15 @@
 </head>
 <body <?php body_class(); ?>>
   <header class="siter-header">
-    <h1 id="header">
-      <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
-    </h1>
+    <div class="header-image">
+      <div class="row">
+        <h1 id="header">
+          <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
+        </h1>
+      </div>
+    </div>
   </header>
   <!-- Begin background div -->
   <div class="background">
+    <!-- Begin Site Content div -->
+    <div class="row">
