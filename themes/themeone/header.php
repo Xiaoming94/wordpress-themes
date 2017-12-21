@@ -22,4 +22,4 @@
   <!-- Begin background div -->
   <div class="background">
     <!-- Begin Site Content div -->
-    <div class="row">
+    <div class="content row">
