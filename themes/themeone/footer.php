@@ -1,7 +1,17 @@
 <!-- End Site Content div -->
 </div>
 <footer class="site-footer">
+
   <div class="row">
+    <nav>
+      <?php
+        $args = array(
+          'theme_location' => 'footer'
+        );
+
+        wp_nav_menu( $args );
+      ?>
+    </nav>
     <ul>
       <li>E-Mail: <a href="mailto:mail@xiaoming.se">mail@xiaoming.se</a></li>
       <li>Source code can be found in <a href="https://github.com/Xiaoming94/wordpress-theme"></a> </li>

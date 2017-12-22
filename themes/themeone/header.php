@@ -11,15 +11,26 @@
 <body <?php body_class(); ?>>
   <header class="siter-header">
     <div class="header-image">
-      <div class="row">
+      <div class="grid-container">
         <h1 id="header">
           <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
         </h1>
         <h5><?php bloginfo('description'); ?></h5>
       </div>
     </div>
+    <nav class="top-bar" id="top-bar">
+        <div class="top-bar-left">
+          <?php
+          $args = array(
+            'theme_location' => 'primary',
+            'menu_class' => 'dropdown vertical medium-horizontal menu'
+          );
+          wp_nav_menu( $args );
+          ?>
+        </div>
+    </nav>
   </header>
   <!-- Begin background div -->
   <div class="background">
     <!-- Begin Site Content div -->
-    <div class="content row">
+    <div class="content grid-container">
