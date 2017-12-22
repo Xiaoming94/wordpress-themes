@@ -18,8 +18,9 @@
         <h5><?php bloginfo('description'); ?></h5>
       </div>
     </div>
-    <nav class="top-bar" id="top-bar">
-        <div class="top-bar-left">
+    <div class="top-bar-bg">
+      <div class="grid-container">
+        <nav class="top-bar" id="top-bar">
           <?php
           $args = array(
             'theme_location' => 'primary',
@@ -27,8 +28,9 @@
           );
           wp_nav_menu( $args );
           ?>
-        </div>
-    </nav>
+        </nav>
+      </div>
+    </div>
   </header>
   <!-- Begin background div -->
   <div class="background">

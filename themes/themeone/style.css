@@ -4848,7 +4848,7 @@ a.thumbnail {
   flex-wrap: wrap; }
   .top-bar,
   .top-bar ul {
-    background-color: #e6e6e6; }
+    background-color: #8a8a8a; }
   .top-bar input {
     max-width: 200px;
     margin-right: 1rem; }
@@ -5006,3 +5006,9 @@ a.thumbnail {
 
 .background {
   background-color: #fefefe; }
+
+.top-bar-bg {
+  background: #8a8a8a; }
+
+.top-bar {
+  background: inherit; }
