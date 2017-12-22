@@ -2,9 +2,10 @@
 
   // enqueing assets
   function themeone_init_assets() {
+    // Styles
     wp_enqueue_style('themeone-style', get_stylesheet_uri() );
-    wp_enqueue_script( 'script', get_template_directory_uri() .
-                        '/js/scripts.js', array ( 'jquery' ), 1.1, true );
+    // Scripts
+    wp_enqueue_script( 'script', get_template_directory_uri() . '/js/scripts.js', array ( 'jquery' ), 1.1, true );
   }
   // Register theme locations for Navigation menus
   function nav_menu_locations() {
