@@ -9,6 +9,12 @@
  * style.scss of themeone
  */
 /**
+ * Variables.scss
+ * Defining some other theme settings and variables
+ * that are mutually exclusive from foundation
+ * Like extended color palettes and so on
+ */
+/**
  * Foundation for Sites by ZURB
  * Version 6.4.3
  * foundation.zurb.com
@@ -4848,7 +4854,7 @@ a.thumbnail {
   flex-wrap: wrap; }
   .top-bar,
   .top-bar ul {
-    background-color: #8a8a8a; }
+    background-color: #324252; }
   .top-bar input {
     max-width: 200px;
     margin-right: 1rem; }
@@ -5008,7 +5014,7 @@ a.thumbnail {
   background-color: #fefefe; }
 
 .top-bar-bg {
-  background: #8a8a8a; }
+  background: #324252; }
 
 .top-bar {
   background: inherit; }
