@@ -18,13 +18,19 @@
         <h5><?php bloginfo('description'); ?></h5>
       </div>
     </div>
-    <div class="top-bar-bg">
+    <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+      <div class="title-bar-title">Menu</div>
+    </div>
+    <div class="top-bar-bg" id="responsive-menu">
       <div class="grid-container">
-        <nav class="top-bar" id="top-bar">
+        <nav class="top-bar">
           <?php
           $args = array(
             'theme_location' => 'primary',
-            'menu_class' => 'dropdown vertical medium-horizontal menu'
+            'menu_class'     => 'dropdown vertical medium-horizontal menu',
+            'container'      => '',
+            'items_wrap'     => '<ul id="%1$s" class="%2$s" data-dropdown-m>%3$s</ul>'
           );
           wp_nav_menu( $args );
           ?>
