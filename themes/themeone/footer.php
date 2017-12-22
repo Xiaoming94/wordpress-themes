@@ -2,7 +2,7 @@
 </div>
 <footer class="site-footer">
 
-  <div class="row">
+  <div class="grid-container">
     <nav>
       <?php
         $args = array(
