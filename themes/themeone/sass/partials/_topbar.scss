@@ -4,4 +4,17 @@
 
 .top-bar {
   background: inherit;
+  padding: 0;
+  li {
+    padding: $topbar-padding;
+    &:hover {
+      background: $topbar-hover-bg;
+    }
+    a {
+      color: $white;
+    }
+    &:active {
+      background: $topbar-hover-bg;
+    }
+  }
 }

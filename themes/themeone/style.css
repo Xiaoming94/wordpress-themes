@@ -5017,4 +5017,13 @@ a.thumbnail {
   background: #324252; }
 
 .top-bar {
-  background: inherit; }
+  background: inherit;
+  padding: 0; }
+  .top-bar li {
+    padding: 0.5rem; }
+    .top-bar li:hover {
+      background: #233242; }
+    .top-bar li a {
+      color: #fefefe; }
+    .top-bar li:active {
+      background: #233242; }

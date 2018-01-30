@@ -30,7 +30,7 @@
             'theme_location' => 'primary',
             'menu_class'     => 'dropdown vertical medium-horizontal menu',
             'container'      => '',
-            'items_wrap'     => '<ul id="%1$s" class="%2$s" data-dropdown-m>%3$s</ul>'
+            'items_wrap'     => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>'
           );
           wp_nav_menu( $args );
           ?>
