@@ -11,7 +11,7 @@ get_header();
 
 ?>
 <div class="grid-x grid-margin-x">
-  <div class="cell medium-8">
+  <div class="cell medium-8 small-12">
     <?php
     if( have_posts() ):
       while( have_posts() ): the_post();?>
@@ -25,7 +25,7 @@ get_header();
     ?>
 
   </div>
-  <div class="cell medium-4">
+  <div class="cell medium-4 small-12">
     <?php
     get_sidebar();
     ?>
