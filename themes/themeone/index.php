@@ -7,19 +7,31 @@
  * @version 0.1.0
  * @author XiaoMing
  */
-  get_header();
+get_header();
 
-  if( have_posts() ):
-    while( have_posts() ): the_post();?>
+?>
+<div class="grid-x grid-margin-x">
+  <div class="cell medium-8">
+    <?php
+    if( have_posts() ):
+      while( have_posts() ): the_post();?>
       <h2><a href=<?php the_permalink(); ?>><?php the_title(); ?></a></h2>
       <?php
         the_content();
       ?>
       <?php
-    endwhile;
-  endif;
+      endwhile;
+    endif;
+    ?>
 
-  get_sidebar();
+  </div>
+  <div class="cell medium-4">
+    <?php
+    get_sidebar();
+    ?>
+  </div>
 
-  get_footer();
+</div>
+<?php
+get_footer();
 ?>
