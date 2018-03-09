@@ -26,13 +26,26 @@
       <div class="grid-container">
         <nav class="top-bar">
           <?php
-          $args = array(
-            'theme_location' => 'primary',
-            'menu_class'     => 'dropdown vertical medium-horizontal menu',
-            'container'      => '',
-            'items_wrap'     => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>'
-          );
-          wp_nav_menu( $args );
+          if(has_nav_menu('primary')){
+            $args = array(
+              'theme_location' => 'primary',
+              'menu_class'     => 'dropdown vertical medium-horizontal menu',
+              'items_wrap'     => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>'
+            );
+            wp_nav_menu( $args );
+          } else {
+            $pages = get_pages();
+            foreach($pages as $page){
+              ?>
+              <ul id="menu" class="dropdown vertical medium-horizontal menu" data-dropdown-menu>
+                <?php
+                  $link = get_page_link( $page->ID );
+                  echo "<li><a href=$link>$page->post_title</a></li>";
+                ?>
+              </ul>
+              <?php
+            }
+          }
           ?>
         </nav>
       </div>
