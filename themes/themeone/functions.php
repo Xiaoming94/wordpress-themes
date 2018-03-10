@@ -32,6 +32,13 @@ function create_sidebar() {
   register_sidebar($sidebar_args);
 }
 
+function show_default_nav() {
+  $pages = array_reverse(get_pages());
+  foreach($pages as $page){
+        $link = get_page_link( $page->ID );
+        echo "<li><a href=$link>$page->post_title</a></li>";
+  }
+}
 // Register Nav-menu
 register_nav_menus(nav_menu_locations());
 

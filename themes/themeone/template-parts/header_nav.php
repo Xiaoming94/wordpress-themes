@@ -14,16 +14,11 @@
         );
         wp_nav_menu( $args );
       } else {
-        $pages = array_reverse(get_pages());
+
         ?>
         <ul id="menu" class="dropdown vertical medium-horizontal menu" data-dropdown-menu>
         <?php
-        foreach($pages as $page){
-          ?>
-            <?php
-              $link = get_page_link( $page->ID );
-              echo "<li><a href=$link>$page->post_title</a></li>";
-        }
+        show_default_nav();
         ?>
         </ul>
       <?php
