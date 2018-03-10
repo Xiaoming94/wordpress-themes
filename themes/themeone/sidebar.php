@@ -2,6 +2,10 @@
 /**
  * Sidebar.php of ThemeOne - A wordpress theme by XiaoMing
  * Template file for the sidebars of the theme
+ *
+ * @link https://github.com/Xiaoming94/wordpress-theme/themes/themeone
+ * @version 0.1.0
+ * @author XiaoMing
  */
 ?>
 
