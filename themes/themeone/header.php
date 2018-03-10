@@ -10,16 +10,10 @@
 </head>
 <body <?php body_class(); ?>>
   <header class="siter-header">
-    <div class="header-image">
-      <div class="grid-container">
-        <h1 id="header">
-          <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
-        </h1>
-        <h5><?php bloginfo('description'); ?></h5>
-      </div>
-    </div>
+
     <?php
 
+    get_template_part('template-parts/site_header');
     // Get header navigation bar
     get_template_part('template-parts/header_nav');
 
