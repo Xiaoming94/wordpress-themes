@@ -21,7 +21,7 @@
     <?php
 
     // Get header navigation bar
-    get_template_part('header_nav');
+    get_template_part('template-parts/header_nav');
 
     ?>
   </header>
