@@ -3,16 +3,9 @@
 <footer class="site-footer">
 
   <div class="grid-container">
-    <nav>
-      <?php
-        $args = array(
-          'theme_location' => 'footer',
-          'menu_class'     => 'vertical menu'
-        );
-
-        wp_nav_menu( $args );
-      ?>
-    </nav>
+    <?php
+      get_template_part('template-parts/footer_nav');
+    ?>
     <ul>
       <li>E-Mail: <a href="mailto:mail@xiaoming.se">mail@xiaoming.se</a></li>
       <li>Source code can be found in <a href="https://github.com/Xiaoming94/wordpress-theme"></a> </li>
