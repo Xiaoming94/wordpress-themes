@@ -22,6 +22,8 @@
           // Getting Comments
           if( comments_open() || get_comments_number() ) {
             comments_template();
+          } else {
+            echo "<h4>Sorry, Comments diabled for this post</h4>";
           }
           // Permalinks to next and previous posts
           ?>
