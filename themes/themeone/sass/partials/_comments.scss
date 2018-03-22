@@ -1,3 +1,16 @@
 ol.comment-list {
   list-style: none;
+  li {
+    .comment-body {
+      margin: {
+        top: 0;
+        left: auto;
+        bottom: 50px;
+        right: 0;
+      }
+      .says {
+        display: none;
+      }
+    }
+  }
 }

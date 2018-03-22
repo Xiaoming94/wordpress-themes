@@ -5019,6 +5019,10 @@ a.thumbnail {
   margin-bottom: 0px;
   margin-right: auto; }
 
+.previous-next-pannel {
+  margin-bottom: 20px;
+  padding: 0; }
+
 .top-bar-bg {
   background: #9596a1; }
 
@@ -5058,3 +5062,10 @@ a.thumbnail {
 
 ol.comment-list {
   list-style: none; }
+  ol.comment-list li .comment-body {
+    margin-top: 0;
+    margin-left: auto;
+    margin-bottom: 50px;
+    margin-right: 0; }
+    ol.comment-list li .comment-body .says {
+      display: none; }

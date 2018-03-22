@@ -26,18 +26,18 @@ if ( post_password_required() ){
           'avatar_size' => 80,
           'style'       => 'ol',
           'short_ping'  => true,
+          'reply_text'  => '<i class="fas fa-reply"></i> Reply'
         );
 
-        wp_list_comments($comment_args);
+        wp_list_comments( $comment_args );
       ?>
     </ol>
   <?php
   endif;
   ?>
-
 <?php
   $comment_form_args = array (
-    'class_submit'  => 'button'
+    'class_submit'  => 'button text-right'
   );
   comment_form( $comment_form_args );
 ?>
