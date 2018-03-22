@@ -1,8 +1,19 @@
 .widget-area {
   li {
     list-style: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $light-gray;
     li {
       list-style: square;
+      border-bottom: none;
     }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  h2 {
+    font-size: 1.5em;
   }
 }

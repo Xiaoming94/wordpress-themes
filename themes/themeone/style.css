@@ -5035,9 +5035,18 @@ a.thumbnail {
       background: #828490; }
 
 .widget-area li {
-  list-style: none; }
+  list-style: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e6e6e6; }
   .widget-area li li {
-    list-style: square; }
+    list-style: square;
+    border-bottom: none; }
+  .widget-area li:last-child {
+    border-bottom: none; }
+
+.widget-area h2 {
+  font-size: 1.5em; }
 
 .site-footer {
   color: #fff;
