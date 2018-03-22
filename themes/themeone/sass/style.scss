@@ -53,6 +53,9 @@
 @include foundation-visibility-classes;
 @include foundation-float-classes;
 
+
+// Loading partials
 @import 'partials/main';
 @import 'partials/topbar';
 @import 'partials/sidebar';
+@import 'partials/sitefooter';
