@@ -14,7 +14,7 @@
 <div class="input-group">
   <input type="search" class="search-field input-group-field" placeholder="Search …" value="" name="s" title="Search for:" />
   <div class="input-group-button">
-    <button type="submt button" class="search-submit button" value="Search" />Search</button>
+    <button type="submt button" class="search-submit button" value="Search"><i class="fa fa-search"></i></button>
   </div>
 </div>
 </form>
