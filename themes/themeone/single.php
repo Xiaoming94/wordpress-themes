@@ -2,6 +2,7 @@
 /**
  * The single.php of ThemeOne - Wordpress theme by XiaoMing
  * The content of this file is for rendering post and so on
+ * TODO: Needs to beautify the code
  *
  * @link https://github.com/Xiaoming94/wordpress-theme/themes/themeone
  * @version 0.1.0
@@ -19,7 +20,9 @@
           // Displaying the content
           the_content();
           // Getting Comments
-          comments_template();
+          if( comments_open() || get_comments_number() ) {
+            comments_template();
+          }
           // Permalinks to next and previous posts
           ?>
           <div class="previous-next-pannel grid-x grid-margin-x">
@@ -28,8 +31,8 @@
               $previouspost = get_previous_post();
               if( !empty( $previouspost ) ): ?>
               <label>Previous post</label>
-              <a href="<?php echo esc_url( get_permalink( $previouspost -> ID ) ); ?>" class="button" >
-                Go to previous post
+              <a href="<?php echo esc_url( get_permalink( $previouspost -> ID ) ); ?>" >
+                Go to <?php echo $previouspost->post_title ?>
               </a>
             <?php endif?>
             </div>
@@ -38,8 +41,8 @@
               $nextpost = get_next_post();
               if( !empty( $nextpost ) ): ?>
               <label>Next Post</label>
-              <a href="<?php echo esc_url( get_permalink( $nextpost -> ID ) ); ?> " class="button" >
-                Go to next post
+              <a href="<?php echo esc_url( get_permalink( $nextpost -> ID ) ); ?> " >
+                Go to <?php echo $nextpost->post_title ?>
               </a>
             <?php endif?>
             </div>
