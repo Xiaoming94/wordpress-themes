@@ -17,6 +17,7 @@ if ( post_password_required() ){
 }
 ?>
 <div id="comments" class="comments-area">
+  <h3>Comments</h3>
   <?php
   if ( have_comments() ):
   ?>
