@@ -23,7 +23,7 @@ if ( post_password_required() ){
     <ol class="comment-list">
       <?php
         $comment_args = array(
-          'avatar_size' => 100,
+          'avatar_size' => 80,
           'style'       => 'ol',
           'short_ping'  => true,
         );
@@ -36,7 +36,10 @@ if ( post_password_required() ){
   ?>
 
 <?php
-  comment_form();
+  $comment_form_args = array (
+    'class_submit'  => 'button'
+  );
+  comment_form( $comment_form_args );
 ?>
 
 </div>
