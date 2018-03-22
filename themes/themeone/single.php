@@ -8,46 +8,53 @@
  * @author XiaoMing
  */
   get_header();
-
-    if( have_posts() ):
-      while( have_posts() ): the_post();?>
-
-        <h2><?php the_title(); ?></h2>
-        <?php
-
+?>
+  <div class="grid-x grid-margin-x">
+    <div class="cell medium-8 small-12">
+      <?php
+      if( have_posts() ):
+        while( have_posts() ): the_post();?>
+          <h2><?php the_title(); ?></h2>
+          <?php
           // Displaying the content
           the_content();
-
           // Getting Comments
           comments_template();
-
           // Permalinks to next and previous posts
           ?>
           <div class="previous-next-pannel grid-x grid-margin-x">
-            <div class="cell medium-6 small-12">
+            <div class="cell medium-6 small-12 text-left">
               <?php
               $previouspost = get_previous_post();
               if( !empty( $previouspost ) ): ?>
               <label>Previous post</label>
-                <a href="<?php echo esc_url( get_permalink( $previouspost -> ID ) ); ?>" class="button" >
-                  Go to previous post
-                </a>
-              <?php endif?>
+              <a href="<?php echo esc_url( get_permalink( $previouspost -> ID ) ); ?>" class="button" >
+                Go to previous post
+              </a>
+            <?php endif?>
             </div>
-            <div class="cell medium-6 small-12">
+            <div class="cell medium-6 small-12 text-right">
               <?php
               $nextpost = get_next_post();
               if( !empty( $nextpost ) ): ?>
               <label>Next Post</label>
-                <a href="<?php echo esc_url( get_permalink( $nextpost -> ID ) ); ?> " class="button" >
-                  Go to next post
-                </a>
-              <?php endif?>
+              <a href="<?php echo esc_url( get_permalink( $nextpost -> ID ) ); ?> " class="button" >
+                Go to next post
+              </a>
+            <?php endif?>
             </div>
           </div>
-          <?php
-      endwhile;
-    endif;
+        <?php
+        endwhile;
 
+      endif; ?>
+    </div>
+    <div class="cell medium-4 small-12">
+      <?php
+      get_sidebar();
+      ?>
+    </div>
+  </div>
+<?php
   get_footer();
 ?>
