@@ -21,6 +21,9 @@ services:
     image: wordpress:latest
     ports:
       - "8000:80"
+    volumes:
+      - ./imgPlaceholder:/var/www/html/wp-content/uploads
+      - ./themes/themeone:/var/www/html/wp-content/themes/themeone
     restart: always
     environment:
       WORDPRESS_DB_HOST: db:3306
