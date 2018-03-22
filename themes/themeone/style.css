@@ -5041,4 +5041,8 @@ a.thumbnail {
 
 .site-footer {
   color: #fff;
-  background: #000; }
+  background: #000;
+  padding-top: 20px;
+  padding-right: inherit;
+  padding-bottom: 20px;
+  padding-left: inherit; }
