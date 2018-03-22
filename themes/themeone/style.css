@@ -5013,6 +5013,12 @@ a.thumbnail {
 .background {
   background-color: #fefefe; }
 
+.content {
+  margin-top: 40px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px; }
+
 .top-bar-bg {
   background: #9596a1; }
 
@@ -5032,3 +5038,7 @@ a.thumbnail {
   list-style: none; }
   .widget-area li li {
     list-style: square; }
+
+.site-footer {
+  color: #fff;
+  background: #000; }
