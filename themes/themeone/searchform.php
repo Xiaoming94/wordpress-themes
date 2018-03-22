@@ -11,9 +11,10 @@
 ?>
 
 <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
-	<label>
-		<span class="screen-reader-text">Search for:</span>
-		<input type="search" class="search-field" placeholder="Search …" value="" name="s" title="Search for:" />
-	</label>
-	<input type="submit" class="search-submit" value="Search" />
+<div class="input-group">
+  <input type="search" class="search-field input-group-field" placeholder="Search …" value="" name="s" title="Search for:" />
+  <div class="input-group-button">
+    <button type="submt button" class="search-submit button" value="Search" />Search</button>
+  </div>
+</div>
 </form>
