@@ -4854,7 +4854,7 @@ a.thumbnail {
   flex-wrap: wrap; }
   .top-bar,
   .top-bar ul {
-    background-color: #324252; }
+    background-color: #9596a1; }
   .top-bar input {
     max-width: 200px;
     margin-right: 1rem; }
@@ -5014,7 +5014,7 @@ a.thumbnail {
   background-color: #fefefe; }
 
 .top-bar-bg {
-  background: #324252; }
+  background: #9596a1; }
 
 .top-bar {
   background: inherit;
@@ -5022,11 +5022,11 @@ a.thumbnail {
   .top-bar li {
     padding: 0.5rem; }
     .top-bar li:hover {
-      background: #233242; }
+      background: #828490; }
     .top-bar li a {
       color: #fefefe; }
     .top-bar li:active {
-      background: #233242; }
+      background: #828490; }
 
 .widget-area li {
   list-style: none; }
