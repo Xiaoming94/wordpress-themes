@@ -42,6 +42,18 @@ function create_footer_widgets() {
   register_sidebar($footer_widget_args);
 }
 
+function create_custom_header_img() {
+  $header_image_args = array (
+    'width'         => 1920,
+    'height'        => 500,
+    'flex-width'    => true,
+    'flex-height'   => true,
+    'default-image' => get_template_directory_uri() . '/assets/img/default-header.jpg',
+  );
+
+  add_theme_support( 'custom-header' , $header_image_args );
+}
+
 function show_default_nav() {
   $pages = array_reverse(get_pages());
   foreach($pages as $page){
@@ -49,6 +61,7 @@ function show_default_nav() {
         echo "<li><a href=$link>$page->post_title</a></li>";
   }
 }
+
 // Register Nav-menu
 register_nav_menus(nav_menu_locations());
 
@@ -59,6 +72,8 @@ add_action('wp_enqueue_scripts', 'themeone_init_assets');
 add_action('widgets_init','create_sidebar');
 
 add_action('widgets_init','create_footer_widgets');
+
+add_action('after_setup_theme', 'create_custom_header_img');
 // Let Wordpress manage document title
 // This is literally to not use <title>
 add_theme_support('title-tag');
