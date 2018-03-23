@@ -9,6 +9,8 @@
     padding: $topbar-padding;
     &:hover {
       background: $topbar-hover-bg;
+      transition-duration: 320ms;
+      transition-property: background;
     }
     a {
       color: $white;
