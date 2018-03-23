@@ -2,28 +2,35 @@
   <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
   <div class="title-bar-title">Menu</div>
 </div>
-<div class="top-bar-bg" id="responsive-menu">
-  <div class="grid-container">
-    <nav class="top-bar">
+<div class="top-bar uppercase" id="responsive-menu" data-animate="hinge-in-from-top hinge-out-from-top">
+  <div class="top-bar-left">
+    <ul class="dropdown vertical medium-horizontal menu" data-dropdown-menu>
+      <li class="menu-text site-header-link">
+        <a href=<?php bloginfo('url'); ?> > <?php bloginfo('name'); ?> </a>
+        <?php echo bloginfo('description'); ?>
+      </li>
       <?php
       if(has_nav_menu('primary')){
         $args = array(
           'theme_location' => 'primary',
-          'menu_class'     => 'dropdown vertical medium-horizontal menu',
-          'items_wrap'     => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>'
+          'items_wrap'     => '',
+          'item_spacing'   => 'discard'
         );
         wp_nav_menu( $args );
       } else {
 
-        ?>
-        <ul id="menu" class="dropdown vertical medium-horizontal menu" data-dropdown-menu>
-        <?php
         show_default_nav();
-        ?>
-        </ul>
-      <?php
+
       }
       ?>
-    </nav>
+    </ul>
+
+  </div>
+  <div class="top-bar-right">
+    <ul class="menu">
+      <li>
+
+      </li>
+    </ul>
   </div>
 </div>

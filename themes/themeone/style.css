@@ -4742,8 +4742,8 @@ a.thumbnail {
   justify-content: flex-start;
   align-items: center; }
   .title-bar .menu-icon {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem; }
+    margin-left: 0.4rem;
+    margin-right: 0.4rem; }
 
 .title-bar-left,
 .title-bar-right {
@@ -4850,7 +4850,7 @@ a.thumbnail {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.7rem;
   flex-wrap: wrap; }
   .top-bar,
   .top-bar ul {
@@ -5472,6 +5472,9 @@ a.thumbnail {
   margin-bottom: 20px;
   padding: 0; }
 
+.uppercase {
+  text-transform: uppercase; }
+
 .top-bar-bg {
   background: #233142; }
 
@@ -5479,14 +5482,22 @@ a.thumbnail {
   background: #233142;
   padding: 0; }
   .top-bar li {
-    padding: 0.5rem; }
+    padding: 0.7rem; }
     .top-bar li:hover {
-      background: #828490;
-      width: auto; }
+      background: #192532; }
     .top-bar li a {
       color: #fefefe; }
     .top-bar li:active {
-      background: #828490; }
+      background: #192532; }
+  .top-bar li.site-header-link {
+    font-style: italic;
+    padding: 0.1rem 2.5rem;
+    color: #00d796; }
+    .top-bar li.site-header-link:hover {
+      background: #233142; }
+
+.title-bar {
+  background: #233142; }
 
 .widget-area li {
   list-style: none;
