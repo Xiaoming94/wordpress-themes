@@ -5490,11 +5490,18 @@ a.thumbnail {
     .top-bar li:active {
       background: #192532; }
   .top-bar li.site-header-link {
+    line-height: 2rem;
     font-style: italic;
     padding: 0.1rem 2.5rem;
-    color: #00d796; }
+    color: #00d796;
+    text-transform: none; }
     .top-bar li.site-header-link:hover {
       background: #233142; }
+    .top-bar li.site-header-link a {
+      padding-top: 0.7rem;
+      padding-right: 0;
+      padding-bottom: 0;
+      padding-left: 0; }
 
 .title-bar {
   background: #233142; }

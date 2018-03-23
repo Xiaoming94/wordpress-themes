@@ -18,11 +18,21 @@
     }
   }
   li.site-header-link {
+    line-height: 2rem;
     font-style: italic;
     padding: 0.1rem 2.5rem;
     color: $primary-color;
+    text-transform: none;
     &:hover{
       background: $topbar-background;
+    }
+    a {
+      padding: {
+        top: 0.7rem;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
     }
   }
 }

@@ -1,11 +1,11 @@
 <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
   <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
-  <div class="title-bar-title">Menu</div>
+  <div class="title-bar-title"><a href=<?php bloginfo('url'); ?> > <?php bloginfo('name'); ?> </a></div>
 </div>
 <div class="top-bar uppercase" id="responsive-menu" data-animate="hinge-in-from-top hinge-out-from-top">
   <div class="top-bar-left">
     <ul class="dropdown vertical medium-horizontal menu" data-dropdown-menu>
-      <li class="menu-text site-header-link">
+      <li class="menu-text site-header-link hide-for-small-only">
         <a href=<?php bloginfo('url'); ?> > <?php bloginfo('name'); ?> </a>
         <?php echo bloginfo('description'); ?>
       </li>
