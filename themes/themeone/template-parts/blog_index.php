@@ -9,7 +9,7 @@
       while( have_posts() ): the_post();?>
       <h3><a href=<?php the_permalink(); ?>><?php the_title(); ?></a></h3>
       <?php
-        the_content();
+        show_post_content_preview( get_the_content(), get_the_ID() );
       ?>
       <?php
       endwhile;

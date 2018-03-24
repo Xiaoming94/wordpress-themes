@@ -62,6 +62,18 @@ function show_default_nav() {
   }
 }
 
+function show_post_content_preview( $content, $post_id ) {
+  $post = get_post($post_id);
+  $post_link = get_permalink($post);
+  $trimmed_content = wp_trim_words( $content, 80, '...' );
+  echo $trimmed_content;
+  // if content got trimmed, add a button
+  if (strlen($trimmed_content) < strlen($content)){
+    echo "<br />";
+    echo "<a href=$post_link class='button'>Continue Reading</a>";
+  }
+}
+
 // Register Nav-menu
 register_nav_menus(nav_menu_locations());
 
@@ -77,5 +89,9 @@ add_action('after_setup_theme', 'create_custom_header_img');
 // Let Wordpress manage document title
 // This is literally to not use <title>
 add_theme_support('title-tag');
+
+// Post-thumbnails
+
+add_theme_support( 'post-thumbnails' );
 
 ?>
