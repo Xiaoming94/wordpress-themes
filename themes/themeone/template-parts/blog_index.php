@@ -18,10 +18,10 @@
         <?php
         if ( has_post_thumbnail() || post_have_image( get_the_ID() ) ):
           ?>
-          <div class="post-thumbnail-container cell medium-4 small-2 post-preview-margin">
+          <div class="post-thumbnail-container cell medium-4 small-12">
             <?php show_post_image( get_the_ID() ) ?>
           </div>
-          <div class="cell medium-8 small-10 post-preview-margin">
+          <div class="cell medium-8 small-12 post-preview-margin">
             <?php show_post_content_preview( get_the_content(), get_the_permalink() ); ?>
           </div>
           <?php

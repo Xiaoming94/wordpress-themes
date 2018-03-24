@@ -5478,6 +5478,9 @@ a.thumbnail {
 a.edit-post-link {
   font-size: 1rem; }
 
+.post-thumbnail-container {
+  margin-bottom: 1rem; }
+
 .top-bar {
   background: #233142;
   padding: 0; }
