@@ -5560,3 +5560,7 @@ ol.comment-list {
 
 .form-submit {
   text-align: right; }
+
+.author-bio-title {
+  font-size: 1.2rem;
+  font-weight: bold; }
