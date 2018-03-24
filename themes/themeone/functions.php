@@ -3,6 +3,8 @@
  * function.php of ThemeOne - Wordpress theme by XiaoMing
  * Contains actions made on the theme and codes for features
  * Probably the only file written in purely PHP
+ *
+ * Contains also useful helper utility functions that are used in the theme code
  */
 
 // enqueing assets
@@ -42,6 +44,7 @@ function create_footer_widgets() {
   register_sidebar($footer_widget_args);
 }
 
+// Function for creating custom header images
 function create_custom_header_img() {
   $header_image_args = array (
     'width'         => 1920,
@@ -54,6 +57,9 @@ function create_custom_header_img() {
   add_theme_support( 'custom-header' , $header_image_args );
 }
 
+// Utility functions are below this line
+
+// Function for showing a default nav_bar when navbar is not present
 function show_default_nav() {
   $pages = array_reverse(get_pages());
   foreach($pages as $page){
@@ -62,15 +68,46 @@ function show_default_nav() {
   }
 }
 
+// Function for generating and showing a preview
 function show_post_content_preview( $content, $permalink ) {
 
-  $trimmed_content = wp_trim_words( $content, 80, '...' );
+  $trimmed_content = wp_trim_words( $content, 60, '...' );
   echo $trimmed_content;
   // if content got trimmed, add a button
   if (strlen($trimmed_content) < strlen($content)){
     echo "<div class='continue-button'>
             <a href=$permalink class='button'>Continue Reading</a>
           </div>";
+  }
+}
+
+
+function post_have_image( $post_id ) {
+  return (bool) retrieve_first_post_image( $post_id );
+}
+
+
+
+function retrieve_first_post_image( $post_id )
+{
+  $content = get_post( $post_id )->post_content;
+
+  // This part is copied from http://wpforce.com/how-to-detect-if-a-post-has-at-least-one-image/
+  $searchimages = '/<img.+src=[\'"]([^\'"]+)[\'"].*>/i';
+
+  // Run preg_match_all to grab all the images and save the results in $pics
+  preg_match_all( $searchimages, $content, $pics );
+  return $pics[1] [0];
+}
+
+
+
+function show_post_image( $post_id ) {
+  if( has_post_thumbnail( $post_id ) ) {
+    echo get_the_post_thumbnail( $post_id );
+  } else {
+    $img_src = retrieve_first_post_image( $post_id );
+    echo "<img src=$img_src />";
   }
 }
 
