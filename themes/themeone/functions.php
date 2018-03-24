@@ -62,15 +62,15 @@ function show_default_nav() {
   }
 }
 
-function show_post_content_preview( $content, $post_id ) {
-  $post = get_post($post_id);
-  $post_link = get_permalink($post);
+function show_post_content_preview( $content, $permalink ) {
+
   $trimmed_content = wp_trim_words( $content, 80, '...' );
   echo $trimmed_content;
   // if content got trimmed, add a button
   if (strlen($trimmed_content) < strlen($content)){
-    echo "<br />";
-    echo "<a href=$post_link class='button'>Continue Reading</a>";
+    echo "<div class='continue-button'>
+            <a href=$permalink class='button'>Continue Reading</a>
+          </div>";
   }
 }
 
