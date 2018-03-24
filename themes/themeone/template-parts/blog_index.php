@@ -7,7 +7,12 @@
       ?>
       <?php
       while( have_posts() ): the_post();?>
-      <h3><a href=<?php the_permalink(); ?>><?php the_title(); ?></a></h3>
+      <h3>
+        <a href=<?php the_permalink(); ?>><?php the_title(); ?></a>
+        <?php
+          edit_post_link( __("[Edit Post]"),"  ","  ",get_the_ID(),"edit-post-link" );
+        ?>
+      </h3>
       <?php
         show_post_content_preview( get_the_content(), get_the_permalink() );
       ?>

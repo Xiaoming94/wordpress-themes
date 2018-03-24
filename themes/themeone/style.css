@@ -5475,6 +5475,9 @@ a.thumbnail {
 .uppercase {
   text-transform: uppercase; }
 
+a.edit-post-link {
+  font-size: 1rem; }
+
 .top-bar {
   background: #233142;
   padding: 0; }
