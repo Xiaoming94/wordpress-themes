@@ -4,6 +4,8 @@
   <div class="cell medium-8 small-12">
     <?php
     if( have_posts() ):
+
+      $preview_word_count = 60;
       ?>
       <?php
       while( have_posts() ): the_post();?>
@@ -22,13 +24,13 @@
               <?php show_post_image( get_the_ID() ) ?>
             </div>
             <div class="cell medium-8 small-12 post-preview-margin">
-              <?php show_post_content_preview( get_the_content(), get_the_permalink() ); ?>
+              <?php show_post_content_preview( get_the_content(), get_the_permalink(), $preview_word_count ); ?>
             </div>
             <?php
           else:
             ?>
             <div class="cell">
-              <?php show_post_content_preview( get_the_content(), get_the_permalink() ); ?>
+              <?php show_post_content_preview( get_the_content(), get_the_permalink(), $preview_word_count ); ?>
             </div>
           <?php endif; ?>
 

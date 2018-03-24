@@ -1,5 +1,7 @@
 <?php
 if( have_posts() ):
+
+  $preview_word_count = 120;
   ?>
   <h3>Posts written by <?php the_author(); ?></h3>
   <hr />
@@ -20,13 +22,13 @@ if( have_posts() ):
           <?php show_post_image( get_the_ID() ) ?>
         </div>
         <div class="cell medium-8 small-12 post-preview-margin">
-          <?php show_post_content_preview( get_the_content(), get_the_permalink() ); ?>
+          <?php show_post_content_preview( get_the_content(), get_the_permalink(), $preview_word_count ); ?>
         </div>
         <?php
       else:
         ?>
         <div class="cell">
-          <?php show_post_content_preview( get_the_content(), get_the_permalink() ); ?>
+          <?php show_post_content_preview( get_the_content(), get_the_permalink(), $preview_word_count ); ?>
         </div>
       <?php endif; ?>
 

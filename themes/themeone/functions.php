@@ -69,9 +69,9 @@ function show_default_nav() {
 }
 
 // Function for generating and showing a preview
-function show_post_content_preview( $content, $permalink ) {
+function show_post_content_preview( $content, $permalink, $preview_word_count=60 ) {
 
-  $trimmed_content = wp_trim_words( $content, 60, '...' );
+  $trimmed_content = wp_trim_words( $content, $preview_word_count, '...' );
   echo $trimmed_content;
   // if content got trimmed, add a button
   if (strlen($trimmed_content) < strlen($content)){
