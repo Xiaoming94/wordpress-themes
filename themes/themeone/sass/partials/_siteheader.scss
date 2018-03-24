@@ -25,8 +25,7 @@
     }
   }
   li.site-header-link {
-    line-height: 2rem;
-    font-style: italic;
+    line-height: 1.2rem;
     padding: 0.1rem 2.5rem;
     color: $primary-color;
     text-transform: none;
@@ -34,12 +33,19 @@
       background: $topbar-background;
     }
     a {
+      font-size: 1.2rem;
       padding: {
-        top: 0.7rem;
+        top: 0.8rem;
         right: 0;
         bottom: 0;
         left: 0;
       }
+
+    }
+    .site-moto {
+      font-size: 0.75rem;
+      font-style: italic;
+      font-weight: normal;
     }
   }
 }

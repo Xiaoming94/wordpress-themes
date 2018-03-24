@@ -5475,9 +5475,6 @@ a.thumbnail {
 .uppercase {
   text-transform: uppercase; }
 
-.top-bar-bg {
-  background: #233142; }
-
 .top-bar {
   background: #233142;
   padding: 0; }
@@ -5492,18 +5489,22 @@ a.thumbnail {
     .top-bar li:active {
       background: #192532; }
   .top-bar li.site-header-link {
-    line-height: 2rem;
-    font-style: italic;
+    line-height: 1.2rem;
     padding: 0.1rem 2.5rem;
     color: #00d796;
     text-transform: none; }
     .top-bar li.site-header-link:hover {
       background: #233142; }
     .top-bar li.site-header-link a {
-      padding-top: 0.7rem;
+      font-size: 1.2rem;
+      padding-top: 0.8rem;
       padding-right: 0;
       padding-bottom: 0;
       padding-left: 0; }
+    .top-bar li.site-header-link .site-moto {
+      font-size: 0.75rem;
+      font-style: italic;
+      font-weight: normal; }
 
 .title-bar {
   background: #233142; }

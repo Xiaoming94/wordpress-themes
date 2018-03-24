@@ -17,7 +17,10 @@
       <!-- First element to the left is the Site link, i.e. The link that goes to index page -->
       <li class="menu-text site-header-link hide-for-small-only">
         <a href=<?php bloginfo('url'); ?> > <?php bloginfo('name'); ?> </a>
-        <?php echo bloginfo('description'); ?>
+        <span class="site-moto">
+          <?php echo bloginfo('description'); ?>
+        </span>
+
       </li>
 
       <!-- Loading Navigation menu from wordpress -->
