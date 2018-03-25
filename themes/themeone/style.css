@@ -3191,7 +3191,7 @@ a.button:hover, a.button:focus {
   border: 1px solid #e6e6e6;
   border-radius: 0.2rem;
   background: #fefefe;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   color: #0a0a0a; }
   .card > :last-child {
