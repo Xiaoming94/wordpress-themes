@@ -5,16 +5,16 @@
     <?php
     if( have_posts() ):
 
-      $preview_word_count = 60;
       ?>
       <?php
-      while( have_posts() ): the_post();?>
-      <h3>
-        <a href=<?php the_permalink(); ?>><?php the_title(); ?></a>
-        <?php
-          edit_post_link( __("[Edit Post]"),"  ","  ",get_the_ID(),"edit-post-link" );
-        ?>
-      </h3>
+      while( have_posts() ): the_post();
+        $preview_word_count = 60;?>
+        <h3 class="post-title">
+          <a href=<?php the_permalink(); ?>><?php the_title(); ?></a>
+          <?php
+            edit_post_link( __("[Edit Post]"),"  ","  ",get_the_ID(),"edit-post-link" );
+            ?>
+        </h3>
         <div class="post-content-preview grid-x grid-margin-x">
 
           <?php
@@ -29,17 +29,20 @@
             <?php
           else:
             ?>
-            <div class="cell">
-              <?php show_post_content_preview( get_the_content(), get_the_permalink(), $preview_word_count ); ?>
+            <div class="cell small-up-12">
+              <?php
+              $preview_word_count = 90;
+              show_post_content_preview( get_the_content(), get_the_permalink(), $preview_word_count );
+              ?>
             </div>
           <?php endif; ?>
 
-      </div>
-      <div class="post-meta-bar">
-        Posted on <?php echo get_the_date() ?> by
-        <?php the_author_posts_link();?>
-      </div>
-      <?php
+        </div>
+        <div class="post-meta-bar">
+          Posted on <?php echo get_the_date() ?> by
+          <?php the_author_posts_link();?>
+        </div>
+        <?php
       endwhile;
     endif;
     ?>
