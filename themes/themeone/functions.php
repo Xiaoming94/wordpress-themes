@@ -107,7 +107,8 @@ function show_post_image( $post_id ) {
     echo get_the_post_thumbnail( $post_id );
   } else {
     $img_src = retrieve_first_post_image( $post_id );
-    echo "<img src=$img_src />";
+    $post_title = get_the_title( $post_id );
+    echo "<img src=$img_src class='thumbnail' alt='post thumbnail'/>";
   }
 }
 
