@@ -12,7 +12,7 @@
 
   get_header();
 ?>
-<h2>
+<h2="page-title">
   Category: <?php single_cat_title('',true); ?>
   <hr />
 </h2>

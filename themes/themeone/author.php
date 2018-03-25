@@ -12,11 +12,11 @@
 
   get_header();
 ?>
-<h1 class="page-title authors-page">Author:
+<h2 class="page-title authors-page">Author:
   <?php
     echo get_the_author();
   ?>
-</h1>
+</h2>
 <hr />
 
 

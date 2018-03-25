@@ -1,4 +1,4 @@
-<h2>Blogposts</h2>
+<h2 class="page-title">Blogposts</h2>
 <hr />
 <div class="grid-x grid-margin-x">
   <div class="cell medium-8 small-12">
