@@ -38,9 +38,18 @@
           <?php endif; ?>
 
         </div>
-        <div class="post-meta-bar">
-          Posted on <?php echo get_the_date() ?> by
-          <?php the_author_posts_link();?>
+        <div class="post-meta-bar card">
+          <div class="grid-x grid-margin-x card-section">
+            <div class="cell medium-6 small-12">
+              <i class="fas fa-pencil-alt"></i>
+              Posted on <?php echo get_the_date() ?> by
+              <?php the_author_posts_link();?>
+            </div>
+            <div class="cell medium-6 small-12 text-right">
+              <i class="fas fa-comments"></i> :
+              <? comments_number(); ?>
+            </div>
+          </div>
         </div>
         <?php
       endwhile;
