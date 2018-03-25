@@ -13,7 +13,7 @@
   get_header();
 ?>
 <h2>
-  Displaying Post for Category: <?php single_cat_title('',true); ?>
+  Category: <?php single_cat_title('',true); ?>
   <hr />
 </h2>
 <div class="grid-x grid-margin-x">
