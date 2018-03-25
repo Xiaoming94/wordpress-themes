@@ -2,6 +2,8 @@
 /**
  * Author.php of ThemeOne - A wordpress theme by XiaoMing
  * This template is used to display the author homepage in wordpress
+ * At present this displays the author bio as a card (if present)
+ * Followed by the said authors posts
  *
  * @link https://github.com/Xiaoming94/wordpress-theme/themes/themeone
  * @version 0.1.0
