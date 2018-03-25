@@ -11,17 +11,19 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-  <header class="siter-header">
-
-    <?php
-
-    get_template_part('template-parts/site_header');
-    // Get header navigation bar
-    get_template_part('template-parts/header_nav');
-
-    ?>
-  </header>
+  
   <!-- Begin background div -->
   <div class="background">
+    <header class="siter-header">
+
+      <?php
+
+      get_template_part('template-parts/site_header');
+      // Get header navigation bar
+      get_template_part('template-parts/header_nav');
+
+      ?>
+    </header>
+
     <!-- Begin Site Content div -->
     <div class="content grid-container">
