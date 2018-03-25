@@ -5545,7 +5545,9 @@ a.edit-post-link {
   border-bottom: 1px solid #e6e6e6; }
   .widget-area li li {
     list-style: square;
-    border-bottom: none; }
+    border-bottom: none;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem; }
   .widget-area li:last-child {
     border-bottom: none; }
 
