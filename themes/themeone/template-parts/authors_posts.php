@@ -33,8 +33,16 @@ if( have_posts() ):
       <?php endif; ?>
 
   </div>
-  <div class="post-meta-bar">
-    Posted on <?php echo get_the_date() ?>
+  <div class="post-meta-bar card">
+    <div class="card-section grid-x grid-margin-x">
+      <div class="cell medium-6 small-12">
+        <i class="fas fa-pencil-alt"></i>
+        Posted on <?php echo get_the_date(); ?>
+      </div>
+      <div class="cell medium-6 small-12 text-right">
+        <?php get_template_part('template-parts/comments_and_cat'); ?>
+      </div>
+    </div>
   </div>
   <?php
   endwhile;

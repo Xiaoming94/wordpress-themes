@@ -42,10 +42,7 @@ if( have_posts() ):
           <?php the_author_posts_link();?>
         </div>
         <div class="cell medium-6 small-12 text-right">
-          <i class="fas fa-comments"></i> :
-          <?php comments_number('0 comments','1 comment','% comments'); ?> |
-          <i class="fas fa-folder-open"></i> :
-          <?php the_category(','); ?>
+          <?php get_template_part('template-parts/comments_and_cat'); ?>
         </div>
       </div>
     </div>
