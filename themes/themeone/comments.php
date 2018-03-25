@@ -38,7 +38,7 @@ if ( post_password_required() ){
   ?>
 <?php
   $comment_form_args = array (
-    'class_submit'  => 'button text-right'
+    'class_submit'  => 'button button-shadow-glow'
   );
   comment_form( $comment_form_args );
 ?>

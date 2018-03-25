@@ -76,7 +76,7 @@ function show_post_content_preview( $content, $permalink, $preview_word_count=60
   // if content got trimmed, add a button
   if (strlen($trimmed_content) < strlen($content)){
     echo "<div class='continue-button'>
-            <a href=$permalink class='button'>Continue Reading</a>
+            <a href=$permalink class='button button-shadow-glow'>Continue Reading</a>
           </div>";
   }
 }
