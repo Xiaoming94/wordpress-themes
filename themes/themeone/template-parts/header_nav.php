@@ -3,11 +3,11 @@
 -->
 
 <!-- Initiate a sticky data container -->
-<div data-sticky-container>
-  <div data-sticky data-margin-top='0' data-top-anchor="banner:bottom">
+<div data-sticky-container data-hide-for="small">
+  <div data-sticky data-sticky-on="small" data-margin-top='0' data-top-anchor="banner:bottom">
 
     <!-- Setup Responsive vertical menu for use on mobile devices -->
-    <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+    <div class="title-bar title-bar-sticky" data-responsive-toggle="responsive-menu" data-hide-for="medium">
       <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
       <div class="title-bar-title"><a href=<?php bloginfo('url'); ?> > <?php bloginfo('name'); ?> </a></div>
     </div>
