@@ -1,0 +1,22 @@
+/**
+ * Variables.scss
+ * Defining some other theme settings and variables
+ * that are mutually exclusive from foundation
+ * Like extended color palettes and so on
+ */
+
+// Color palette
+
+// Basic colors
+$blue: #0172af;
+$green: #429f63;
+$red: #a90231;
+$yellow: #a59e21;
+$cyan: #0990b3;
+$purple: #9201ab;
+$orange: #a35202;
+$magenta: #ae0291;
+$black-blue: #233142;
+
+$topbar-bg-color: $black-blue;
+$topbar-hover-bg: #192532;

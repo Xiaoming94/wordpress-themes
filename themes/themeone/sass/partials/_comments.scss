@@ -1,0 +1,30 @@
+ol.comment-list {
+  list-style: none;
+  li {
+    .comment-body {
+      margin: {
+        top: 0;
+        left: auto;
+        bottom: 10px;
+        right: 0;
+      }
+      padding: 20px;
+
+      .says {
+        display: none;
+      }
+    }
+    .comment-meta {
+      width: auto;
+      display: inline-block;
+    }
+    &.odd {
+      background: $light-gray;
+    }
+    border-bottom: 1px solid $light-gray;
+  }
+}
+
+.form-submit {
+  text-align: right;
+}

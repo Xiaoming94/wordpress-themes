@@ -1,0 +1,76 @@
+// Custom-Header Image
+
+
+// This section deals with the topbar
+
+//.top-bar-bg {
+//  background: $topbar-background;
+//}
+
+.top-bar {
+  background: $topbar-background;
+  padding: 0;
+  li {
+    padding: $topbar-padding;
+    &:hover {
+      background: $topbar-hover-bg;
+      transition-duration: 320ms;
+      transition-property: background;
+    }
+    a {
+      color: $white;
+    }
+    &:active {
+      background: $topbar-hover-bg;
+    }
+  }
+  li.site-header-link {
+    line-height: 1.2rem;
+    padding: 0.1rem 2.5rem;
+    color: $primary-color;
+    text-transform: none;
+    &:hover{
+      background: $topbar-background;
+    }
+    a {
+      font-size: 1.2rem;
+      padding: {
+        top: 0.8rem;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+
+    }
+    .site-moto {
+      font-size: 0.75rem;
+      font-style: italic;
+      font-weight: normal;
+    }
+  }
+}
+
+.title-bar {
+  background: $black-blue;
+}
+
+.is-stuck .topbar-sticky-shrink {
+  @include shadow(0px 2px 4px 2px rgba(0, 0, 0, 0.75));
+  li {
+    padding: $topbar-padding * 0.75;
+    &.site-header-link {
+      line-height: 1rem;
+      padding: 0.1rem 1rem;
+    }
+    a {
+      font-size: 1rem;
+      padding-top: 0.5rem;
+    }
+    transition-duration: 400ms;
+    transition-property: padding, -mov-specific ,font-size, box-shadow;
+  }
+}
+
+.is-stuck .title-bar-sticky {
+  @include shadow(0px 2px 4px 2px rgba(0, 0, 0, 0.75));
+}
