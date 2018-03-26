@@ -25,9 +25,11 @@
           ?>
 
           <!-- Showing The Author and date -->
-          <div class="post-meta-bar">
-            This post is written by <?php the_author_posts_link(); ?>
-            on <?php echo get_the_date(); ?>
+          <div class="post-meta-bar card">
+            <div class="card-section">
+              This post is written by <?php the_author_posts_link(); ?>
+              on <?php echo get_the_date(); ?>
+            </div>
           </div>
 
           <?php
