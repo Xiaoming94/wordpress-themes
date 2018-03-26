@@ -1,6 +1,6 @@
 <!-- Header Link file -->
 
-<div class="custom-site-header">
+<div id="banner" class="custom-site-header">
   <div class="header-image-media">
     <?php
     if ( get_header_image() ) :

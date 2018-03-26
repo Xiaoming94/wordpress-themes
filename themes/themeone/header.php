@@ -11,10 +11,10 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-  
+
   <!-- Begin background div -->
   <div class="background">
-    <header class="siter-header">
+    <header id="header" class="siter-header">
 
       <?php
 
