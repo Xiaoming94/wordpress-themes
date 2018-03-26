@@ -32,8 +32,8 @@
           if(has_nav_menu('primary')){
             $args = array(
               'theme_location' => 'primary',
-              'items_wrap'     => '',
-              'item_spacing'   => 'discard'
+              'container'      => '',
+              'items_wrap'     => '%3$s',
             );
             wp_nav_menu( $args );
           } else {
