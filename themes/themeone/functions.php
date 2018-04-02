@@ -39,7 +39,9 @@ function create_footer_widgets() {
   $footer_widget_args = array (
     'name'          => __('Footer Widgets', 'themeone'),
     'id'            => 'footer-sidebar-1',
-    'description'   => __('Widgets to be displayed in the footer', 'themeone')
+    'description'   => __('Widgets to be displayed in the footer', 'themeone'),
+    'before_widget' => '<div class="cell medium-6 small-12 widget">',
+    'after_widget'  => '</div>'
   );
   register_sidebar($footer_widget_args);
 }
