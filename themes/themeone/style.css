@@ -5598,6 +5598,14 @@ a.edit-post-link {
   padding-bottom: 20px;
   padding-left: inherit; }
 
+#footer-sidebar .widget {
+  margin-top: 1.5rem; }
+  #footer-sidebar .widget ul {
+    list-style: square; }
+    #footer-sidebar .widget ul li {
+      border: none;
+      padding: 0.5rem; }
+
 ol.comment-list {
   list-style: none; }
   ol.comment-list li {

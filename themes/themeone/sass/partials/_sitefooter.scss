@@ -8,3 +8,16 @@
     left: inherit;
   }
 }
+
+#footer-sidebar {
+  .widget {
+    ul {
+      list-style: square;
+      li {
+        border: none;
+        padding: 0.5rem;
+      }
+    }
+    margin-top: 1.5rem;
+  }
+}
