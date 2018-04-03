@@ -16,7 +16,7 @@
 
 h2.page-title {
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 3.5em;
 }
 
 .previous-next-pannel {
@@ -57,7 +57,7 @@ a.edit-post-link {
 .post-meta-bar {
   background: $light-gray;
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
   @include border-radius(20px);
 }
 
