@@ -35,15 +35,22 @@ if( have_posts() ):
 
     </div>
     <div class="post-meta-bar card">
-      <div class="grid-x grid-margin-x card-section">
-        <div class="cell medium-6 small-12">
+      <div class="card-section">
           <i class="fas fa-pencil-alt"></i>
-          Posted on <?php echo get_the_date() ?> by
+          : Posted by
           <?php the_author_posts_link();?>
-        </div>
-        <div class="cell medium-6 small-12 text-right">
+          on
+          <?php echo get_the_date("d-m-y") ?><span class="meta-bar-separator"></span>
           <?php get_template_part('template-parts/comments_and_cat'); ?>
-        </div>
+          <?php $tags=get_the_tags();
+          if($tags):?>
+          <span class="meta-bar-separator"></span>
+          <i class="fas fa-tags"></i> :
+          <?php
+          foreach ($tags as $tag) {
+            echo $tag->name . ',';
+          }?>
+        <?php endif; ?>
       </div>
     </div>
     <?php
