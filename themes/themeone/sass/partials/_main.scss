@@ -59,6 +59,20 @@ a.edit-post-link {
   margin-top: 1rem;
   margin-bottom: 2.5rem;
   @include border-radius(20px);
+  @include breakpoint(medium up) {
+    font-size: 0.8rem;
+    .meta-bar-separator {
+      display: inline-block;
+      width: 1.5em;
+    }
+  };
+  @include breakpoint(small down) {
+    font-size: 1rem;
+    .meta-bar-separator {
+      display: block;
+      width: 0px;
+    }
+  };
 }
 
 .post-body {
