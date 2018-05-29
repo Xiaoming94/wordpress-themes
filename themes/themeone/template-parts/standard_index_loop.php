@@ -4,7 +4,7 @@ if( have_posts() ):
   ?>
   <?php
   while( have_posts() ): the_post();
-    $preview_word_count = 60;?>
+    $preview_word_count = 120;?>
     <h3 class="post-title">
       <a href=<?php the_permalink(); ?>><?php the_title(); ?></a>
       <?php
@@ -27,7 +27,7 @@ if( have_posts() ):
         ?>
         <div class="cell small-up-12">
           <?php
-          $preview_word_count = 90;
+          $preview_word_count = 150;
           show_post_content_preview( get_the_content(), get_the_permalink(), $preview_word_count );
           ?>
         </div>
