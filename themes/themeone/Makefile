@@ -7,7 +7,8 @@ CSS_SRC_MAIN=$(CSS_SRC_DIR)/style.scss
 CSS_OUTPUT_FILE=style.css
 CSS_FOUNDATION_PATH="./bower_components/foundation-sites/scss"
 CSS_MOTION_UI_PATH="./bower_components/motion-ui/src/"
-CSS_INCLUDE_PATHS=-I $(CSS_FOUNDATION_PATH) -I $(CSS_MOTION_UI_PATH)
+CSS_NODEJS_PATH="./node_modules"
+CSS_INCLUDE_PATHS=-I $(CSS_FOUNDATION_PATH) -I $(CSS_MOTION_UI_PATH) -I $(CSS_NODEJS_PATH)
 CSS_TARGET=$(CSS_CC) $(CSS_INCLUDE_PATHS)\
              $(CSS_FLAGS) $(CSS_SRC_MAIN) $(CSS_OUTPUT_FILE)
 
